@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruz Garage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2da6aadd18.js" crossorigin="anonymous"></script>
+
+
+<body>
+    <header>
+        <div id="logo">
+            <p id="gruz" onclick="smoothScrollToTop()">
+            Gruz<strong>Garage</strong> 
+            </p>
+        </div>
+        <div id="menu">
+            <div id="Onas">
+                <p class="nav" id="stnas" onclick="smoothScrollTo('onas')"> O nas </p>
+            </div>
+            <div id="Uslugi">
+                <p class="nav" id="stuslugi" onclick="smoothScrollTo('uslugi')">Usługi</p>
+            </div>
+            <div id="Cennik">
+                <p class="nav" id="stcennik" onclick="smoothScrollTo('cennik')">Cennik</p>
+            </div>
+            <div id="Kontakt">
+                <p class="nav" id="stkontakt" onclick="smoothScrollTo('kontakt')">Kontakt</p>
+            </div>
+            <div id="logotyp">
+                <img src="obrys_bialy.png" id="bw" onclick="toggleTheme()">
+            </div>
+            
+        </div>
+
+    </header>
+    <main>
+        <div id="galeria">
+            <img src="firma.jpg">
+        </div>
+        <div id="onas">
+            
+            <h2>O nas </h2><i class="fa-solid fa-person-chalkboard fa-2xl" style="color: var(--icon-color);"></i>
+            <p>
+                Warsztat Samochodowy Braci Druciarskich to miejsce, gdzie pasja do motoryzacji spotyka się z profesjonalizmem i dbałością o klienta. Założony w 1995 roku, nasz warsztat zawsze stawiał na rozwój i innowacje. Przez lata zdobywaliśmy doświadczenie, szkoliliśmy się i inwestowaliśmy w najnowsze technologie, aby sprostać rosnącym wymaganiom naszych klientów.
+
+                Dziś jesteśmy dumni, że możemy zapewnić kompleksową obsługę dla prawie każdego typu pojazdu. Nasza misja to zapewnienie najwyższej jakości usług, a satysfakcja klienta jest dla nas najważniejsza.
+
+                Nasza firma stale się rozwija, a nasz zespół składa się z wykwalifikowanych specjalistów, którzy są na bieżąco z najnowszymi trendami i technologiami w branży motoryzacyjnej. Wierzymy, że ciągłe szkolenia i inwestycje w nowoczesne narzędzia i sprzęt są kluczem do utrzymania naszej pozycji jako jednego z wiodących warsztatów samochodowych w regionie.
+
+                Jesteśmy dumni z naszej historii i z tego, co osiągnęliśmy, ale zawsze patrzymy w przyszłość. Naszym celem jest nie tylko utrzymanie wysokiego standardu obsługi, ale także ciągłe doskonalenie naszych usług, aby sprostać zmieniającym się potrzebom naszych klientów.
+            </p>
+        </div>
+        <div id="uslugi">
+            <h2>Usługi</h2>
+            <ul>
+                <li><img src="pan_komputerek1.png"><div class="text-container">Diagnostyka komputerowa: Nasz warsztat jest wyposażony w najnowocześniejsze urządzenia do diagnostyki komputerowej, które pozwalają nam szybko i dokładnie zidentyfikować problemy z Twoim pojazdem.</div></li>
+                
+                <li><img src="klimator.png">
+                    <div class="text-container">Serwis klimatyzacji: Oferujemy pełny zakres usług związanych z klimatyzacją, w tym serwis, czyszczenie i dezynfekcję, a także napełnianie i testy szczelności.</div></li>
+                
+                <li><img src="pan_z_guma.png">
+                    <div class="text-container"> Wymiana opon: Zapewniamy profesjonalną wymianę opon, balansowanie kół i sprawdzanie geometrii zawieszenia.</div></li>
+               
+                <li><img src="kikucik.png">
+                    <div class="text-container">Przeglądy okresowe: Wykonujemy przeglądy okresowe, które pomagają utrzymać Twój pojazd w doskonałym stanie i zapewniają bezpieczeństwo na drodze.</div></li>
+                
+                <li><img src="pan_bucik.png">
+                    <div class="text-container"> Wycena indywidualnego problemu: Jeżeli masz problem z samochodem, który nie jest wymieniony w naszej ofercie, zapraszamy do kontaktu. Nasz zespół specjalistów dokona wyceny problemu 
+                    i zaproponuje optymalne rozwiązanie.</div></li>
+                    
+                <li><img src="walterwhite.png">
+                    <div class="text-container">
+                        Lakierowanie elementu: Jest to usługa, która obejmuje profesjonalne malowanie i lakierowanie wybranych elementów pojazdu. Działa to idealnie w przypadku uszkodzonych lub zużytych powłok lakieru na konkretnych częściach samochodu. 
+                        
+                    </div></li>
+                <li><img src="panfuszerka.png">
+                    <div class="text-container">
+                        Montaż bodykitu: Jest to usługa, która umożliwia personalizację i nadanie wyjątkowego wyglądu Twojemu pojazdowi.
+                         Bodykity to zestawy estetycznych modyfikacji, które mogą obejmować nowe zderzaki, progi, spojlery i inne elementy poprawiające aerodynamikę i styl auta.
+                    </div></li>
+                    <li><img src="kluczyki.png">
+                        <div class="text-container"> Samochód zastępczy: Rozumiemy, że Twój czas jest cenny. Dlatego oferujemy możliwość wypożyczenia 
+                            samochodu zastępczego na czas naprawy Twojego pojazdu. Cena wynajmu to 50 zł za dzień.</div></li>
+            </ul>
+        </div>
+        <div id="cennik">
+            <h2>Cennik</h2>
+            <table>
+                <tr>
+                    <th>Usługa</th>
+                    <th>Cena</th>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-desktop fa-2xl" style="color:  var(--icon-color);"></i> Diagnostyka komputerowa</td>
+                    <td>150 zł</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-gear fa-2xl" style="color: var(--icon-color);"></i></i> Serwis klimatyzacji</td>
+                    <td>280 zł</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-arrow-rotate-left fa-2xl" style="color: var(--icon-color);"></i> Wymiana opon</td>
+                    <td>100 zł</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-gears fa-2xl" style="color: var(--icon-color);"></i> Przeglądy okresowe</td>
+                    <td>300 zł</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-brush fa-2xl" style="color: var(--icon-color);"></i> Lakierowanie elementu</td>
+                    <td>300-800 zł</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-screwdriver fa-2xl" style="color:  var(--icon-color);"></i> Montaż bodykit</td>
+                    <td>5700 zł - <strong>&#8734;</strong></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-handshake fa-2xl" style="color: var(--icon-color);"></i> Samochód zastępczy</td>
+                    <td>100 zł doba</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        <div id="kontakt">
+    <h2>Kontakt</h2> 
+    <br>
+    <p>
+        <i class="fa-solid fa-car-burst fa-2xl" style="color: var(--icon-color);"></i>Gruz Garage <i class="fa-solid fa-car-burst fa-2xl" style="color: var(--icon-color);"></i><br><br>
+        <i class="fa-solid fa-city fa-2xl" style="color: var(--icon-color);"></i>       48-200 Prudnik  ul. Druciarska 2137.<br><br>
+        <i class="fa-solid fa-phone fa-2xl" style="color: var(--icon-color);"></i>         Tel: 0700 200 54<br><br>
+        <i class="fa-solid fa-inbox fa-2xl" style="color: var(--icon-color);"></i>      Email: gruzgarage@psysna.pl</p>
+        <div id="rightkontakt">
+            <i class="fa-brands fa-facebook fa-2xl contents" style="color: #1350b9;"
+            onclick="openInNewTab('https://www.facebook.com/profile.php?id=61555923351814');"
+            ></i>
+            <i class="fa-brands fa-facebook-messenger fa-2xl contents" style="color: #1097fe;"
+            onclick="openInNewTab('https://www.messenger.com/t/198624223340146');"
+            ></i>
+            <i class="fa-brands fa-twitter fa-2xl contents" style="color: #74C0FC;"
+            onclick="openInNewTab('https://twitter.com/?lang=pl');"
+            ></i>
+            <i class="fa-brands fa-youtube fa-2xl contents" style="color: #fc2727;"
+            onclick="openInNewTab('https://www.youtube.com/watch?v=dQw4w9WgXcQ');"
+            ></i>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>© 2024 Warsztat Samochodowy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>

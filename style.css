@@ -1,0 +1,358 @@
+html{
+    scroll-behavior: smooth;
+}
+.theme-dark {
+    --color-primary: #161616;
+    --color-secondary: #1a1a1a;
+    --color-accent: #f7bf5f;
+    --font-color: #ffffff;
+    --logo-color: rgb(233,233,233);
+    --icon-color: #f7bf5f;
+    --icon-accent: #8d8d8d;
+ }
+.theme-light {
+    --color-primary: #ffffff;
+    --color-secondary: #f0f0f0;
+    --color-accent: #cacaca;
+    --font-color: #000000;
+    --logo-color: rgb(16, 16, 16);
+    --icon-color: #ff9900;
+    --icon-accent: #cacaca;
+ }
+body{
+    margin: 0px;
+    background-color: var(--color-primary);
+    color: var(--font-color);
+    scroll-behavior: smooth;
+    font-family: "SoDo Sans SemiBold";
+    max-width: 100%; 
+    overflow-x: hidden;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #161616;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #383838;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+header{
+    max-height: 140px;
+    min-width: 800px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary);
+   /* position: fixed;
+       top: 0;
+       z-index: 1030; */
+}
+#gruz
+{
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    max-height: 100%;
+    margin: 0px;
+    float: left;
+    line-height: 139px; 
+}
+#logo{
+    width: 15%;
+    height: 100%;
+    margin-left: 20px;
+    align-items: center;
+    font-family: "Satisfy";
+    font-size: 62px;
+    color: var(--logo-color);
+    float: left;
+    display: flex;
+    cursor: pointer;
+
+}
+
+#menu{
+    width: 85%;
+    align-items: center;
+    color: var(--font-color);
+    font-family: "SoDo Sans SemiBold";
+    font-size: 23px;
+
+}
+#Onas{
+    width: 20%;
+    height: 100%;
+    max-height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 139px;  
+}
+#Cennik
+{
+    height: 100%;
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 139px;  
+}
+#Kontakt{
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 139px;     
+}
+#Uslugi{
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 139px;    
+}
+.nav{
+    margin: 0px;
+    display: inline;
+    transition: font-size 0.3s ease;
+}
+.nav:hover{
+    font-size: 25px;
+    cursor: pointer;
+    text-shadow:
+    0 0 10px var(--color-accent),
+    0 0 20px var(--color-accent);
+
+}
+#logotyp
+{
+    width: 15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+#logotyp:hover
+{
+    transform: scale(1.05);
+}
+#bw
+{
+    width: 100%;
+    height: 100%;
+    scale: 1.2;
+}
+
+/*#menu > *{
+    padding-left: 160px;
+    padding-right: 160px;
+
+} */
+
+main{
+    margin: 0px;
+}
+#galeria{
+    min-width: 60%;
+    max-width: 100%;
+    min-height: 650px;
+    max-height: 850px;
+  /*  white-space:nowrap;
+    bottom: 0;
+    left: 0;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+#galeria img {
+    width: 100%;
+    max-height: 850px;
+    
+  }
+/*@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--font-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
+#onas {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(92, 92, 92, 0.15);
+    font-family: "SoDo Sans SemiBold";
+    color: var(--font-color);
+
+  }
+  
+  #onas h2 {
+    text-align: center;
+    color: var(--font-color);
+  }
+  
+  #onas p {
+    text-align: justify;
+    line-height: 1.6;
+    color: var(--font-color);
+  }
+  
+  #uslugi {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(92, 92, 92, 0.15);
+    font-family: "SoDo Sans SemiBold";
+    color: var(--font-color);
+
+    line-height: 100px;
+  }
+  
+  #uslugi h2 {
+    text-align: center;
+    color: var(--font-color);
+  }
+  
+  #uslugi ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #uslugi li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border-bottom: 1px solid var(--font-color);
+  
+
+ 
+  }
+.text-container {
+    text-align: left;
+    letter-spacing: normal;
+    line-height: normal;
+    text-wrap: balance;
+    margin-left:40px;
+  }
+li img{
+    vertical-align: middle;
+    width: 30%;
+    height: 30%;
+    margin-right: 70px;
+
+  }
+
+  
+  #cennik {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(92, 92, 92, 0.15);
+    font-family: "SoDo Sans SemiBold";
+    color: var(--font-color);
+
+  }
+  
+  #cennik h2 {
+    text-align: center;
+    color: var(--font-color);
+  }
+  
+  #cennik table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #cennik th, #cennik td {
+    border: 1px solid #383838;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  #cennik th {
+    background-color: #383838;
+    color: #ffffff;
+  }
+  #cennik i {
+
+    margin: 15px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 24px; height: 24px;
+  
+  }
+  
+  #kontakt {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(92, 92, 92, 0.15);
+    font-family: "SoDo Sans SemiBold";
+    color: var(--font-color);
+    min-height: 320px;
+  }
+  
+  #kontakt h2 {
+    text-align: center;
+    color: var(--font-color);
+  }
+  
+  #kontakt p {
+    text-align: left;
+    line-height: 1.6;
+    color: var(--font-color);
+  }
+  #rightkontakt{
+    float:right;
+  }
+.contents{
+  margin: 8px;
+}
+.contents:hover
+{
+  scale: 1.4;
+  cursor: pointer;
+  text-shadow:
+  0 0 10px var(--icon-accent),
+  0 0 15px var(--icon-accent);
+}
+  
